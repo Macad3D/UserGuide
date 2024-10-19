@@ -1,0 +1,135 @@
+@import url("material.css");
+
+/* Navbar */
+.navbar-nav, .navbar-brand {
+    --bs-body-color: #ffffff;
+    --bs-body-hover-color: #BFC8D9;
+    --bs-navbar-color: #ffffff;
+    --bs-navbar-hover-color: #BFC8D9;
+    --bs-navbar-active-color: #BFC8D9;
+    --bs-navbar-brand-color: #ffffff;
+    --bs-navbar-brand-hover-color: #BFC8D9;
+}
+.navbar-nav {
+    visibility: collapse;
+}
+.navbar .btn {
+    --bs-btn-color: #ffffff;
+    --bs-btn-hover-color: #BFC8D9;
+    --bs-btn-active-color: #BFC8D9;
+}
+[data-bs-theme='dark'] nav.navbar {
+    background-color: #233352;
+}
+[data-bs-theme='light'] nav.navbar {
+    background-color: #334b77;
+}
+img#logo {
+    width: 48px;
+    height: 48px;
+    margin: -10px 20px -10px 20px;
+}
+
+/* Images */
+figure {
+    display: inline-block;
+    font-size: smaller;
+    font-style: italic;
+    text-align: center;
+    padding: 5px;
+    margin-inline-start: 10px;
+}
+
+/* Shortcuts */
+kbd {
+    display: inline-block;
+    padding: 3px 5px;
+    font: 12px var(--bs-font-monospace);
+    line-height: 11px;
+    color: var(--bs-secondary-color);
+    vertical-align: text-bottom;
+    background-color: var(--bs-secondary-bg);
+    border: solid 1px var(--bs-border-color);
+    border-radius: 6px;
+    box-shadow: inset 0 -1px 0 var(--bs-body-color);
+}
+
+/* Content */
+
+body {
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+content, [data-bs-theme=light] {
+    --bs-link-color-rgb: 72, 95, 199;
+}
+
+.content thead th {
+    border-width: 0 0 2px;
+    background-color: var(--bs-secondary-bg);
+}
+
+.content tbody {
+    border-width: 0;
+    border-style: hidden;
+}
+
+.content table td {
+    border: 1px solid var(--bs-secondary-bg);
+    border-width: 0 0 1px;
+    padding: 0.5em 0.75em;
+    vertical-align: top;
+    background-color: var(--bs-tertiary-bg);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;   
+}
+
+img {
+    border-radius: 0;
+    box-shadow: var(--card-box-shadow);
+}
+
+/* Footer */
+footer {
+    background-color: var(--bs-secondary-bg)
+}
+
+/* Conceptual */
+.conceptual dl {
+    display: grid;
+    grid-gap: 8px 16px;
+    grid-template-columns: max-content;
+}
+.conceptual dt {
+    font-weight: 550;
+}
+.conceptual dd {
+    margin: 0;
+    grid-column-start: 2;
+}
+
+/* Managed Reference */
+.parameters dt>b {
+    font-weight: 600;
+}
+
+.definition code {
+    font-size: 16px;
+}
+
+article>hr {
+    color: var(--bs-secondary);
+}
+
+code {
+    margin-right: .2em;
+    font-size: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+}

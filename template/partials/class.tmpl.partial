@@ -1,0 +1,137 @@
+{{!Licensed to the .NET Foundation under one or more agreements. The .NET Foundation licenses this file to you under the MIT license.}}
+
+{{>partials/class.header}}
+
+{{#children}}
+
+{{^_splitReference}}
+<h2 class="section" id="{{id}}">{{>partials/classSubtitle}}</h2>
+{{/_splitReference}}
+
+{{#children}}
+
+{{#overload}}
+<a id="{{id}}" data-uid="{{uid}}"></a>
+{{/overload}}
+
+{{#syntax}}
+<div class="codewrapper definition" id="{{id}}" data-uid="{{uid}}">
+  <pre><code class="lang-csharp hljs">{{syntax.content.0.value}}</code></pre>
+</div>
+
+<div class="markdown level1 summary">{{{summary}}}</div>
+<div class="markdown level1 conceptual">{{{conceptual}}}</div>
+
+{{#syntax.parameters.0}}
+<dl class="parameters">
+{{/syntax.parameters.0}}
+{{#syntax.parameters}}
+  <dt><code>{{{id}}}</code> {{{type.specName.0.value}}}</dt>
+  <dd>{{{description}}}</dd>
+{{/syntax.parameters}}
+{{#syntax.parameters.0}}
+</dl>
+{{/syntax.parameters.0}}
+
+{{#syntax.return}}
+<dl class="parameters">
+  <dt><b>{{__global.returns}}:</b> {{{type.specName.0.value}}}</dt>
+  <dd>{{{description}}}</dd>
+</dl>
+{{/syntax.return}}
+
+{{#syntax.typeParameters.0}}
+<dl class="parameters">
+{{/syntax.typeParameters.0}}
+{{#syntax.typeParameters}}
+  <dt><code>{{{id}}}</code></dt>
+  <dd>{{{description}}}</dd>
+{{/syntax.typeParameters}}
+{{#syntax.typeParameters.0}}
+</dl>
+{{/syntax.typeParameters.0}}
+
+{{#fieldValue}}
+<dl class="parameters">
+  <dt><b>{{__global.fieldValue}}:</b> {{{type.specName.0.value}}}</dt>
+  <dd>{{{description}}}</dd>
+</dl>
+{{/fieldValue}}
+
+{{#propertyValue}}
+<dl class="parameters">
+  <dt><b>{{__global.propertyValue}}:</b> {{{type.specName.0.value}}}</dt>
+  <dd>{{{description}}}</dd>
+</dl>
+{{/propertyValue}}
+
+{{#eventType}}
+<dl class="parameters">
+  <dt><b>{{__global.eventType}}:</b> {{{type.specName.0.value}}}</dt>
+  <dd>{{{description}}}</dd>
+</dl>
+{{/eventType}}
+
+<hr>
+{{/syntax}}
+
+{{#example.0}}
+<h3 class="section" id="{{id}}_examples">{{__global.examples}}</h3>
+{{/example.0}}
+{{#example}}
+{{{.}}}
+{{/example}}
+
+{{#remarks}}
+<h3 class="section" id="{{id}}_remarks">{{__global.remarks}}</h3>
+<div class="markdown level1 remarks">{{{remarks}}}</div>
+{{/remarks}}
+
+{{#exceptions.0}}
+<h3 class="section">{{__global.exceptions}}</h3>
+<dl class="parameters">
+{{/exceptions.0}}
+{{#exceptions}}
+  <dt>{{{type.specName.0.value}}}</dt>
+  <dd>{{{description}}}</dd>
+{{/exceptions}}
+{{#exceptions.0}}
+</dl>
+{{/exceptions.0}}
+
+{{#seealso.0}}
+<dl class="typelist seealso">
+  <dt>{{__global.seealso}}</dt>
+  <dd>
+{{/seealso.0}}
+{{#seealso}}
+  {{#isCref}}
+  <div>{{{type.specName.0.value}}}</div>
+  {{/isCref}}
+  {{^isCref}}
+  <div>{{{url}}}</div>
+  {{/isCref}}
+{{/seealso}}
+{{#seealso.0}}
+  </dd>
+</dl>
+{{/seealso.0}}
+
+{{/children}}
+{{/children}}
+
+{{#seealso.0}}
+<h2 id="seealso">{{__global.seealso}}</h2>
+<div class="seealso">
+{{/seealso.0}}
+{{#seealso}}
+  {{#isCref}}
+    <div>{{{type.specName.0.value}}}</div>
+  {{/isCref}}
+  {{^isCref}}
+    <div>{{{url}}}</div>
+  {{/isCref}}
+{{/seealso}}
+{{#seealso.0}}
+</div>
+{{/seealso.0}}

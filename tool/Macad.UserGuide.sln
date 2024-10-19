@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Macad.UserGuide", "Macad.UserGuide.csproj", "{97D41E1F-72C3-4608-8893-D004A0A0D03F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97D41E1F-72C3-4608-8893-D004A0A0D03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D41E1F-72C3-4608-8893-D004A0A0D03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D41E1F-72C3-4608-8893-D004A0A0D03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D41E1F-72C3-4608-8893-D004A0A0D03F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0AF1022-EC90-42AC-9D26-AFA7DDDA0996}
+	EndGlobalSection
+EndGlobal

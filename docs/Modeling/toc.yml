@@ -1,0 +1,14 @@
+- name: Primitives
+  href: Primitives/toc.yml
+- name: Modify
+  href: Modify/toc.yml
+- name: Form
+  href: Form/toc.yml
+- name: Multiply
+  href: Multiply/toc.yml
+- name: Sheet
+  href: Sheet/toc.yml
+- name: Assemble
+  href: Assemble/toc.yml
+- name: Auxiliary
+  href: Auxiliary/toc.yml

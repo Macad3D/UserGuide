@@ -1,0 +1,108 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "Macad.Common.dll",
+            "Macad.Core.dll",
+            "Macad.Exchange.dll",
+            "Macad.Interaction.dll"
+          ],
+          "src": "assemblies"
+        }
+      ],
+      "dest": "_api",
+      "enumSortOrder": "declaringOrder",
+      "namespaceLayout": "nested"
+    }
+  ],
+
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**.yml",
+          "index.md"
+        ],
+        "src": "_api",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "docs/**.md",
+          "docs/**/toc.yml",
+          "toc.yml",
+          "index.md"
+        ]
+      }
+    ],
+
+    "resource": [
+      {
+        "files": [
+          "docs/**.png",
+          "docs/**.apng",
+          "images/**",
+          "go/*.php",
+          "go/.htaccess"
+        ]
+      }
+    ],
+
+    "__xrefService": [
+      "https://xref.docs.microsoft.com/query?uid={uid}"
+    ],
+
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ]
+      }
+    ],
+
+    "dest": "_site",
+    "postProcessors": ["ExtractSearchIndex"],
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+      
+    "template": [
+      "default",
+      "modern",
+      "template"
+    ],
+
+    "globalMetadataFiles": [],
+    "globalMetadata": {
+      "_enableSearch": true,
+      "_enableNewTab": true,
+      "_appName": "Macad|3D User Guide",
+      "_appLogoPath": "images/logo.svg",
+      "_appLogoUrl": "https://macad3d.net/userguide/",
+      "_appFaviconPath": "images/favicon.ico",
+      "_appFooter": "<a href=\"https://macad3d.net\">Macad|3D Homepage</a> | Visit on <a href=\"https://www.github.com/Macad3d/Macad3d\" target=\"_blank\">Github</a> | <a href=\"https://macad3d.net/#contact\">Contact</a>",
+      "_disableNextArticle": true
+    },
+
+    "fileMetadataFiles": [],
+    "fileMetadata": {
+      "_disableNextArticle": {
+        "articles/Concepts/**/*.md": false,
+        "articles/Scripting/**/*.md": false,
+        "articles/Tutorial/**/*.md": false
+      }
+    },
+
+    "sitemap": {
+      "baseUrl": "https://macad3d.net/userguide/",
+      "priority": 0.1,
+      "changefreq": "monthly"
+    }
+  },
+        
+  "rules": {
+    "InvalidAssemblyReference": "info"
+  }
+}
