@@ -1,5 +1,5 @@
 <?php
-    $href = 'articles/Welcome.html';
+    $href = 'docs/Welcome.html';
     $guid = strtolower($_REQUEST['guid']);
 
     // Check for valid GUID
