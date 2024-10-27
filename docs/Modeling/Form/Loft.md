@@ -11,7 +11,7 @@ Start Capping
     * __None:__ The section will not be closed and a wall added to the lofted shape, so you will receive a hollowed out shape.
     * __Flat:__ The section will be closed with a flat capping. If both sides are closed, the shape will not be hollowed out.
     
-    ![Capping Mode _Flat_ and _None_](LoftCappingMode.png)
+    ^![Capping Mode _Flat_ and _None_](LoftCappingMode.png)
 
 End Capping
 :   The capping mode of the end section. See _Start Capping_ for possible values.
@@ -26,7 +26,7 @@ Direction
     * __Outwards:__ The sections describe the inner shape of the loft, and the wall is added to the outside.
 
     This parameter is only available if capping mode is _None_ for start or end capping.
-	![Direction _Outwards_ and _Inwards_](LoftThickenDirection.png)
+	^![Direction _Outwards_ and _Inwards_](LoftThickenDirection.png)
 
 Corner Type
 :   Defines how the corners will be build if the shape is thickened. This is typically only relevant for convex corners in _Outwards_ mode and accordingly for concave corners in _Inwards_ mode.
@@ -35,7 +35,7 @@ Corner Type
     * __Angular:__ The corners are created using the extension of the adjacent faces.
     
 	This parameter is only available if capping mode is _None_ for start or end capping.
-	![Corner Type _Round_ and _Angular_, both with direction _Outwards_.](LoftCornerMode.png)
+	^![Corner Type _Round_ and _Angular_, both with direction _Outwards_.](LoftCornerMode.png)
 
 ## Remarks
 The order of the sections will be determined automatically by minimizing distances between all sections.

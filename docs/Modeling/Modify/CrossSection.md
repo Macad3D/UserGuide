@@ -7,7 +7,7 @@ Creates a cross section sketch by cutting the solid with a plane.
 ## Properties
 Contours
 :   Determines whether the cut lines of the outer edges, the inner edges or both are used.
-    ![Contours: All - Inner - Outer](CrossSectionContours.png)
+    ^![Contours: All - Inner - Outer](CrossSectionContours.png)
 
 Orientation
 :   The orientation of the plane as a rotation angle around the X-axis and the Y-axis.

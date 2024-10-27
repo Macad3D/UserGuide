@@ -7,14 +7,14 @@ Makes a sketch or solid thicker or thinner by creating parallel copies of each c
 ## Properties
 Distance
 :   Defines the distance between the new boundary and the initial one. A positive distance makes the shape thicker, a negative distance narrows the shape.
-    ![Original, Positive Distance, Negative Distance](OffsetDistanceSign.png)
+    ^![Original, Positive Distance, Negative Distance](OffsetDistanceSign.png)
 
 Corner Type
 :   Specifies how gaps between the faces are filled at the edges where the faces move apart.
     * __Round:__ The gaps will be filled with round faces to connect the faces. This also applies to gaps caused by negative distance in concave corners.
     * __Angular:__ Closes the gaps by attempting to continue the original Faces up to their cutting edge.
 
-    ![Corner Type _Round_, _Angular_](OffsetCornerType.png)
+    ^![Corner Type _Round_, _Angular_](OffsetCornerType.png)
 
 Keep Original
 :   _Only for sketch type bodies._

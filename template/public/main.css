@@ -34,10 +34,14 @@ img#logo {
 figure {
     display: inline-block;
     font-size: smaller;
-    font-style: italic;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    background-color: var(--bs-tertiary-bg);
     margin-inline-start: 10px;
+    border-radius: var(--bs-border-radius);
+    border-color: var(--bs-tertiary-color);
+    margin: 4px 2px;
+    box-shadow: var(--card-box-shadow);
 }
 
 /* Shortcuts */
@@ -92,7 +96,7 @@ a:hover {
 
 img {
     border-radius: 0;
-    box-shadow: var(--card-box-shadow);
+    box-shadow: none;
 }
 
 /* Footer */

@@ -7,14 +7,13 @@ Tapers a face of a solid guided by a base edge or vertex.
 ## Properties
 Angle
 :   The angle of the taper relative to the face. If the angle is positive, material is removed to build the taper. If the angle is negative, material is added.
-    ![_Angle = 30°_, _Angle = -30°_](TaperAnglePosNeg.png)
+    ^![_Angle = 30°_, _Angle = -30°_](TaperAnglePosNeg.png)
 
 Offset
 :   Moves the start of the taper in it's direction.
+    ^![Using an Offset](TaperOffset.png)
     > [!TIP]
->  The offset is most useful when tapering rods starting in the middle of the rod to the end, e.g. for yards or booms.
-    
-    ![Using an Offset](TaperOffset.png)
+    >  The offset is most useful when tapering rods starting in the middle of the rod to the end, e.g. for yards or booms.
 
 Reselect Face
 :   Starts reselection of the face and the base edge or vertex.

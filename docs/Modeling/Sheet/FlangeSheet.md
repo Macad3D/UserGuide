@@ -20,7 +20,7 @@ Radius
 
 Gaps
 :   This parameters will add a free space on the sides, making the flange smaller than the original face.
-    ![_Gaps = 10_ on both sides](FlangeSheetGaps.png)
+    ^![_Gaps = 10_ on both sides](FlangeSheetGaps.png)
 
 Relief Type
 :   The type of the relief cut into the bend part to support the bending. The following types can be selected:

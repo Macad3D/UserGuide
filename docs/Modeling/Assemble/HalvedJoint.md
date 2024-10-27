@@ -7,7 +7,7 @@ Build a junction of two solids by removing half of the thickness from each part.
 ## Properties
 Size Ratio
 :   Defines the ratio of the material thickness of each of the parts.
-    ![_Size Ratio = 50%_, _Size Ratio = 25%_](HalvedJointSizeRatio.png)
+    ^![_Size Ratio = 50%_, _Size Ratio = 25%_](HalvedJointSizeRatio.png)
 Orientation
 :   If set to _Auto_ the orientation of the half-cut will be determined automatically. If set to _Custom_ the desired orientation can be selected in the viewport.
 Select Orientation
@@ -26,10 +26,10 @@ Multiple joints are created if the two shapes overlap at several points. Custom 
 
 The following cases are supported:
 
-![Cross Overlap](HalvedJointCaseCross.png)
-![Tees Overlap](HalvedJointCaseTee.png)
-![Corner Overlap](HalvedJointCaseCorner.png)
-![Parallel Overlap](HalvedJointCaseParallel.png)
+^![Cross Overlap](HalvedJointCaseCross.png)
+^![Tees Overlap](HalvedJointCaseTee.png)
+^![Corner Overlap](HalvedJointCaseCorner.png)
+^![Parallel Overlap](HalvedJointCaseParallel.png)
 
 ## Creating a Halved Joint
 

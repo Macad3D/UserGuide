@@ -14,7 +14,7 @@ Rotation
 
 Border
 :   If checked, only the outer elements forming a rectangle will be created, the inner elements will be skipped.
-    ![Border Mode _Checked_ and _Unchecked_](LinearArrayBorderMode.png)
+    ^![Border Mode _Checked_ and _Unchecked_](LinearArrayBorderMode.png)
 
 Quantity
 :   _Per direction._

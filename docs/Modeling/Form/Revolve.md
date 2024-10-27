@@ -10,18 +10,18 @@ Axis
 
 Offset from Axis
 :   The distance of the center of revoltion from the selected coordinate system base axis.
-    ![Without _Offset_, with _Offset_](RevolveOffset.png)
+    ^![Without _Offset_, with _Offset_](RevolveOffset.png)
 
 Segment
 :   If this value is smaller than 360°, a segment of the revolved shape is built using the given angle.
-    ![_Segment = 180°_](RevolveSegment180.png)
+    ^![_Segment = 180°_](RevolveSegment180.png)
 
 ## Remarks
 > [!IMPORTANT]
 > Only closed contours can be revolved. If you want the resulting shape to be solid, close the contour on the axis
           you want to revolve around.
 
-![Example of a contour and the revolved result (complete and segment).](RevolveSample.png)
+^![Example of a contour and the revolved result (complete and segment).](RevolveSample.png)
 
 ## Creating a Revolve
 

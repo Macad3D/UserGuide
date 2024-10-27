@@ -10,7 +10,7 @@ The biggest expansion is the introduction of Live Tools. These are interactive t
 
 The live tools are provided by almost every shape and modifier that can meaningfully map parameters in the viewport.
 
-![_Live Tool_ of _Flange Sheet_ in action](LiveToolsDemo.apng)
+^![_Live Tool_ of _Flange Sheet_ in action](LiveToolsDemo.apng)
 
 ## Modelling
 

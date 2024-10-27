@@ -9,7 +9,7 @@ Creates a pipe by sweeping a profile along a modelled path. Pipes can be applied
 Profile
 :   Defines the profile of the pipe. There are some predefined profiles that can be parameterized. By selecting _Custom_, a sketch is created which can be given a specific shape. The profile sketch is can be selected via the shape stack.
 
-    ![Profile Selection](PipeProfiles.png)
+    ^![Profile Selection](PipeProfiles.png)
 
 Dimension
 :   Scales the profile uniformly (if the option _symmetric profile_ is checked) or separately in width and height. The size information refers to the total width or total height.
@@ -36,7 +36,7 @@ This problem can be solved in three ways:
 - Reducing the bending radius so that bends are smaller
 - Create the soft transition directly in the sketch
 
-![Left: The path. Mid: One bend does not fit. Right: Slightly reduced bend radius solved it.](PipeSegTooShort.png)
+^![Left: The path. Mid: One bend does not fit. Right: Slightly reduced bend radius solved it.](PipeSegTooShort.png)
 
 > [!NOTE]
 >  The bending points are only inserted at the transition between segments. If a segment itself has a tight bend, this will not be taken into account.
@@ -58,7 +58,7 @@ If a bend is calculated using the pipe modifier, a drawing can be generated auto
 > [!NOTE]
 >  The drawing contains length dimensions that allow for a shortening of the bend. This is strongly dependent on the material, wall thickness and diameter, so only an approximation is achieved here.
 
-![Automatically generated Pipe Drawing](PipeDrawing.png)
+^![Automatically generated Pipe Drawing](PipeDrawing.png)
 
 ### Creating a Pipe Drawing
 1. Select the body with a Pipe modifier on it's shape stack.

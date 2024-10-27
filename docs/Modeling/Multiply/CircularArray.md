@@ -17,7 +17,7 @@ Radius
 
 Angle Range
 :   Defines the range of the circle, in which the copies will be arranged. The angle between each element will be `Range / (Quantity - 1)`.
-    ![_Angle Range = 360°_, _Angle Range = 180°_](CircularArrayAngleRange.png)
+    ^![_Angle Range = 360°_, _Angle Range = 180°_](CircularArrayAngleRange.png)
 
 Alignment
 :   Defines the distribution of the elements in relation to the original element.
@@ -25,15 +25,15 @@ Alignment
     * __Center:__ The original element will be the central element. In this mode, the original element may be moved if _Quantity_ is even.
     * __Last:__ The original element will be the last element.
     
-    ![Alignment _Left_, _Center_ and _Last_](CircularArrayAlignment.png)
+    ^![Alignment _Left_, _Center_ and _Last_](CircularArrayAlignment.png)
 
 Original Angle
 :   The angle of the circle center to the original shape pivot. Use this parameter to rotate the circle or rather move the center of the circle.
-    ![_Original Angle = 0°_, _Original Angle = 45°_](CircularArrayOriginalAngle.png)
+    ^![_Original Angle = 0°_, _Original Angle = 45°_](CircularArrayOriginalAngle.png)
 
 Keep Orientation
 :   If checked, all copies will keep the orientation of the original. Otherwise the elements will be rotated accordingly to their position on the circle.
-    ![_Keep Orientation_ checked and unchecked](CircularArrayKeepOrientation.png)
+    ^![_Keep Orientation_ checked and unchecked](CircularArrayKeepOrientation.png)
 
 ## Remarks
 The circle center is defined by the shape pivot being a point on the circle, the _Radius_ as the distance of the shape pivot to the circle center, and the _Original Angle_ as the angle of the shape pivot on the circle. To move the center of the circle, adjust the _Radius_ and the _Original Angle_.

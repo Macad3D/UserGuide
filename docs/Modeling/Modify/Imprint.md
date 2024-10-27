@@ -11,11 +11,11 @@ Mode
     * __Lower:__ The structure described by the sketch will be lowered to create a depression.
     * __Cutout:__ The structure described by the sketch will be punched out.
     
-    ![Imprint Mode _Raise_, _Lower_ and _Cutout_](ImprintModes.png)
+    ^![Imprint Mode _Raise_, _Lower_ and _Cutout_](ImprintModes.png)
 
 Draft Angle
 :   The angle to chamfer the sides of the imprint to build a draft.
-    ![_Draft Angle = 30°_](ImprintDraft.png)
+    ^![_Draft Angle = 30°_](ImprintDraft.png)
 
 Depth
 :   The depth of the imprint.
