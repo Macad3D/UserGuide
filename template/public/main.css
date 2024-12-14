@@ -44,6 +44,14 @@ figure {
     box-shadow: var(--card-box-shadow);
 }
 
+.img-swap {
+    cursor: url('/images/cursor_play.png'), pointer;
+} 
+
+.img-swap.on {
+    cursor: url('/images/cursor_stop.png'), pointer;
+} 
+
 /* Shortcuts */
 kbd {
     display: inline-block;

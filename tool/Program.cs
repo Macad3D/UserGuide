@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.Drawing;
+using System.Reflection;
 using Macad.UserGuide.Markdown;
 using Markdig;
 using Docfx;
@@ -8,29 +9,33 @@ namespace Macad.UserGuide;
 
 internal class Program
 {
+    static List<string> _TempFiles = [];
+    static string? _PathToDocfxProject;
+
+    //--------------------------------------------------------------------------------------------------
+
     static async Task Main(string[] args)
     {
         Console.WriteLine("Macad|3D UserGuide Generator");
 
         // Find Docs folder
-        string? pathToDocfxProject = null;
         var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
         while (path != null)
         {
             if (File.Exists(Path.Combine(path, "docfx.json")))
             {
-                pathToDocfxProject = path;
+                _PathToDocfxProject = path;
                 break;
             }
             path = Path.GetDirectoryName(path);
         }
 
-        if (pathToDocfxProject == null)
+        if (_PathToDocfxProject == null)
         {
             Console.WriteLine("Error: Cannot find Docfx project file.");
             Environment.Exit(-1);
         }
-        Environment.CurrentDirectory = pathToDocfxProject;
+        Environment.CurrentDirectory = _PathToDocfxProject;
 
         // Command line switches
         bool runMetadata = true;
@@ -51,8 +56,11 @@ internal class Program
         {
             // Run build stage
             await _RunBuildStage();
-            _CreateXrefMap(pathToDocfxProject);
+            _CreateXrefMap();
         }
+
+        // Cleanup
+        _TempFiles.ForEach(File.Delete);
     }
 
     //--------------------------------------------------------------------------------------------------
@@ -93,6 +101,7 @@ internal class Program
 
         try
         {
+            _CreatePreviewImagesForAnimations("docs");
             await Docset.Build("docfx.json", options);
         }
         catch (Exception e)
@@ -104,9 +113,9 @@ internal class Program
 
     //--------------------------------------------------------------------------------------------------
 
-    static void _CreateXrefMap(string pathToDocfxProject)
+    static void _CreateXrefMap()
     {
-        var pathToSource = Path.Combine(pathToDocfxProject, "_site", "xrefmap.yml");
+        var pathToSource = Path.Combine(_PathToDocfxProject, "_site", "xrefmap.yml");
         if (!File.Exists(pathToSource))
         {
             Console.WriteLine("Error: Cannot find generated xrefmap.yml.");
@@ -114,7 +123,7 @@ internal class Program
         }
         var lines = File.ReadAllLines(pathToSource);
 
-        var pathToTarget = Path.Combine(pathToDocfxProject, "_site", "go", "xrefmap.php");
+        var pathToTarget = Path.Combine(_PathToDocfxProject, "_site", "go", "xrefmap.php");
         var target = File.CreateText(pathToTarget);
         target.WriteLine("<?php");
         target.WriteLine("return array(");
@@ -140,5 +149,32 @@ internal class Program
         target.WriteLine(");");
         target.WriteLine("?>");
         target.Close();
+    }
+
+    //--------------------------------------------------------------------------------------------------
+
+    static void _CreatePreviewImagesForAnimations(string sourcePath)
+    {
+        Console.WriteLine("Creating preview images for animations...");
+
+        var pathToOverlay = Path.Combine(_PathToDocfxProject, "images", "playbtn_overlay.png");
+        using var overlayImage = Image.FromFile(pathToOverlay);
+
+        foreach (var filePath in Directory.EnumerateFiles(sourcePath, "*.apng", SearchOption.AllDirectories))
+        {
+            string targetPath = Path.ChangeExtension(filePath, ".png");
+            if (File.Exists(targetPath))
+            {
+                continue;
+            }
+
+            // Read in APNG, it will only read in the first frame, which we use for preview
+            using var image = Image.FromFile(filePath);
+            using var graphics = Graphics.FromImage(image);
+            graphics.CompositingMode = System.Drawing.Drawing2D.CompositingMode.SourceOver;
+            graphics.DrawImage(overlayImage, (float)(image.Width-overlayImage.Width)/2, (float)(image.Height-overlayImage.Height)/2 );
+            image.Save(targetPath);
+            _TempFiles.Add(targetPath);
+        }
     }
 }
