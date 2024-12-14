@@ -45,11 +45,11 @@ figure {
 }
 
 .img-swap {
-    cursor: url('/images/cursor_play.png'), pointer;
+    cursor: url('../images/cursor_play.png'), pointer;
 } 
 
 .img-swap.on {
-    cursor: url('/images/cursor_stop.png'), pointer;
+    cursor: url('../images/cursor_stop.png'), pointer;
 } 
 
 /* Shortcuts */
