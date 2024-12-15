@@ -26,9 +26,12 @@ To create new segments, tools are started within the sketch editor. The segments
 
 ## Constraints
 
-Constraints are used to ensure certain requirements. These can refer to points, segments or both, individually or in relation to others. A constraint solver shifts the points after each change until all constraints can be fulfilled. The solver can fail if too many constraints exist, constraints have conflicting requirements, or the numerical complexity becomes too high.
-
+Constraints are used to ensure certain requirements. These can refer to points, segments or both, individually or in relation to others. A constraint solver shifts the points after each change until all constraints can be fulfilled. 
 To create constraints, select all points and segments involved and select the constraint from the ribbon bar. If there is a constraint parameter, it is displayed in the property pane. In the sketch editor view, constraints are shown with white symbols on a blue background.
+
+> [!TIP]
+> The solver can fail if too many constraints exist, constraints have conflicting requirements, or the numerical complexity becomes too high. 
+> However, the constraint solver can also fail if the area in which points would have to be moved in order to fulfill all constraints becomes too large. In this case, it can help to support the solver and move the points close to the point that is likely to fulfill the constraints.
 
 ## Import and Export
 
