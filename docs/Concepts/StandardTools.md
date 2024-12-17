@@ -33,7 +33,7 @@ The _Duplicate_ and _Create Reference_ tools also require some explanation. Both
 
 With _Duplicate_, the entire body including the entire shape stack is duplicated. If a change is made to the new or old body, this does not affect the other. 
 
-With _Create Reference_ also a new body is created, but this refers to the shape of the original body. If the shape of the original body is changed, the shape of the new body also changes. Regardless of this, the new body can again accept new modifiers in order to further edit the inherited shape.
+With __[Create Reference](xref:55fc2982-4f52-4c9d-8e75-b1b100fd53b0)__ also a new body is created, but this refers to the shape of the original body. If the shape of the original body is changed, the shape of the new body also changes. Regardless of this, the new body can again accept new modifiers in order to further edit the inherited shape.
 
 ^![Shape stack of a _Reference_](StandardToolsReferenceStack.png)
 
