@@ -17,6 +17,7 @@ STEP        | Solid Import and Export
 BREP        | Solid Import and Export
 OBJ         | Mesh Import and Export
 STL         | Mesh Import and Export
+GLTF        | Mesh Export
 U3D         | Mesh Export
 PDF         | Drawing Export, Mesh Export (as 3D-PDF)
 
