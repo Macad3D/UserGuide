@@ -10,4 +10,6 @@
   href: Modeling/toc.yml
 - name: Scripting
   href: Scripting/toc.yml
+- name: Platforms
+  href: Misc/Platforms.md
 - href: License/License.md

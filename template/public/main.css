@@ -107,6 +107,13 @@ img {
     box-shadow: none;
 }
 
+h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+  
 /* Footer */
 footer {
     background-color: var(--bs-secondary-bg)
@@ -124,6 +131,13 @@ footer {
 .conceptual dd {
     margin: 0;
     grid-column-start: 2;
+}
+.conceptual h2 {
+    border-bottom: 2px solid #ddd;
+}
+.conceptual h4 {
+  padding-bottom: 0px;
+  border-bottom: 0px;
 }
 
 /* Managed Reference */
