@@ -12,7 +12,7 @@ Tools are divided into individual processing phases, which are called _actions_.
 
 Actions and tools can usually be canceled with the <kbd>Esc</kbd> key. While an action is running, additional information is often displayed next to the mouse pointer, e.g. the length/width/height when creating a box. Values that are displayed in an input field can also be entered manually using the keyboard. The input can be made without selecting the input field and is completed with the <kbd>Enter</kbd> key.
 
-^![_Create Box_-Tool allowing manual entry of length and width](EditingBoxTool.png)
+^![_Create Box_-Tool allowing manual entry of length and width](EditingBoxTool.apng)
 
 The properties of bodies, shapes and tools are displayed in the property pane and can be edited here. After creating a body or adding a modifier, its parameters are displayed here and can be added, refined or changed.
 
@@ -28,6 +28,8 @@ Shape stacks can become quite extensive if you incorporate additional shapes or 
 ^![Shape stack with a foreign body](EditingShapeStack.png)
 
 Modifiers cannot be moved within the stack. However, they can be skipped or deleted entirely. New modifiers can also be inserted: To do this, the current shape pointer (yellow arrow) is set to the modifier that is to apply as the predecessor for the processing step to be inserted, and the new modifier is added as usual. This can also be done in sub-stacks.
+
+^![Adding modifier inside shape stack](EditingShapeStackSubstack.apng)
 
 ## Errors
 

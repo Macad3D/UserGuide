@@ -38,16 +38,15 @@ sketch.Segments.Add(1, new SketchSegmentLine(2, 0));
 ```
 
 > [!Tip] 
-> The utility class @Macad.Core.Shapes.SketchBuilder can also be used for the programmatic creation of sketches. This offers simple functions for creating polylines and creates all the necessary points and segments.
-
-The code for the sketch using @Macad.Core.Shapes.SketchBuilder then looks as follows:
-```cs
-var sb = new SketchBuilder(sketch);
-sb.StartPath(-5.0, 0.0);
-sb.ArcTo(5.0, 0.0, 0.0, 5.0);
-sb.LineTo(-5.0, 0.0);
-sb.ClosePath();
-```
+> The utility class @Macad.Core.Shapes.SketchBuilder can also be used for the programmatic creation of sketches. This offers simple functions for creating polylines and creates all the necessary points and segments. 
+> The code for the sketch using @Macad.Core.Shapes.SketchBuilder then looks as follows:
+> ```cs
+> var sb = new SketchBuilder(sketch);
+> sb.StartPath(-5.0, 0.0);
+> sb.ArcTo(5.0, 0.0, 0.0, 5.0);
+> sb.LineTo(-5.0, 0.0);
+> sb.ClosePath();
+> ```
 
 # Create a Body
 Now we have an initial shape (primitive), we can create a body. For this, we use again the static `Create` function. This function takes the initial shape as parameter, this is why we need to create the shape first.
@@ -76,4 +75,4 @@ extrude.Depth = 100.0;
 [!code-cs[Main](Samples/CreateProfile.csx)]
 
 ## See Also
-- @dbef1051-1ced-4b54-89a5-64c02de1722d
+- <xref:dbef1051-1ced-4b54-89a5-64c02de1722d>

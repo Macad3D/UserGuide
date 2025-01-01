@@ -1,6 +1,6 @@
 ---
 uid: e0d6ed71-f1fa-481b-94b4-c7f76591b1b4
-title: Editing
+title: Standard Tools
 ---
 This page explains some of the standard editing tools.
 

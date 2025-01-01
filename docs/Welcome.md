@@ -4,7 +4,7 @@ title: Welcome to Macad|3D.
 ---
 This user guide is intended to provide an introduction to the basic principles of the program. In addition, it serves as a reference about the design tools and scripting that can be used.
 
-If you already know Macad\|3D and want to know what has been added in the latest version, you can find an overview of the new features and changes here: [What's new in release 3](xref:f5697cf2-acbd-47e9-86d5-0af8c66973f2).
+If you already know Macad\|3D and want to know what has been added in the latest version, you can find an overview of the new features and changes here: [What's new in release 4](xref:0aa98281-d673-4261-af37-cee77ada8add).
 
 The following reading is recommended for beginners:
 1. [Topology Model](xref:980d397f-67bc-4874-a24d-42cc80029ef6)

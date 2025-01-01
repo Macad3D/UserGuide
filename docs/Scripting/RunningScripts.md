@@ -21,7 +21,9 @@ Generally there are two different kinds of scripts: Interactive scripts do a one
 ## Running Scripts via Command Line
 Scripts can be started via command line to enable automated processes. For this the path to the script is passed as follows:
 
-`Macad.exe /runscript=<scriptfile.csx>`
+```cmd
+Macad.exe /runscript=<scriptfile.csx>
+```
 
 The script will be executed immediately after program start. If a document is passed for opening via the command line at the same time, the document is opened first, then the script is executed.
 

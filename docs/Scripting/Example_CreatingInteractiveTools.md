@@ -21,7 +21,7 @@ if (body == null)
 ```
 
 ## Create the Tool
-All interactions in the workspace are driven by a tool class, which we need to implement in our script. It is derived from the abstract class @Macad.Interaction.Tool. There is only one function which must be implemented (@Macad.Interaction.Tool.Start) and which is called when our tool is being started.
+All interactions in the workspace are driven by a tool class, which we need to implement in our script. It is derived from the abstract class @Macad.Interaction.Tool. There override at least the function @Macad.Interaction.Tool.OnStart which is called when our tool is being started.
 
 ```cs
 public class HoleOnFaceTool : Tool
@@ -45,7 +45,7 @@ public HoleOnFaceTool(Body targetBody)
 ```
 Now let's fill our start function. The tool does not need to implement the concrete interaction with the viewport, it just controls them by using so called ToolActions. We use the class @Macad.Interaction.SelectSubshapeAction which provides an implementation of selecting any subshape from a set of bodies. Here, we ask for selecting a face out of the shape of the target body.
 
-The action is started by calling the base class function @Macad.Interaction.Tool.StartAction.
+The action is started by calling the base class function @Macad.Interaction.Tool.StartAction*.
 
 Finally, we set a help text and a special face selection cursor, so it is clear to the user what we expect from him to do.
 
@@ -126,5 +126,6 @@ WorkspaceController.StartTool(new HoleOnFaceTool(body));
 [!code-cs[Main](Samples/HoleOnFaceTool.csx)]
 
 ## See Also
-- @dbef1051-1ced-4b54-89a5-64c02de1722d
-- @0e4bd8dd-c0f6-4ad6-a251-302a96744c94
+- <xref:dbef1051-1ced-4b54-89a5-64c02de1722d>
+- <xref:0e4bd8dd-c0f6-4ad6-a251-302a96744c94>
+

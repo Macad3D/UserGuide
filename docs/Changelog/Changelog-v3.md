@@ -74,9 +74,9 @@ The live tools are provided by almost every shape and modifier that can meaningf
 * **Layers** can be sorted in the layer editor using drag'n'drop.
 
 * **Workspace**
-    - The selection behavior has been adjusted to match the windows standard: __LMB__ selects exclusively, __Shift + LMB__ extends the selection, __Ctrl + LMB__ toggles the selection. Mouse movement with the left mouse button pressed starts the rubberband selection.
+    - The selection behavior has been adjusted to match the windows standard: __LMB__ selects exclusively, <kbd>Shift</kdb> __+ LMB__ extends the selection, <kbd>Ctrl</kdb> __+ LMB__ toggles the selection. Mouse movement with the left mouse button pressed starts the rubberband selection.
     - Rotation now always takes place around the center of gravity. This is determined at the start of the rotation and remains in place until the individual rotation process is completed.
-    - The shortcut __E__ is used to start editing a shape if a corresponding tool is available (e.g. Sketch, Fillet, Chamfer).
+    - The shortcut <kbd>E</kbd> is used to start editing a shape if a corresponding tool is available (e.g. Sketch, Fillet, Chamfer).
 
 * **Document Explorer**
     - At the top of the document explorer there is an input field for searching the list of all entities by name.

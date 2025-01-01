@@ -32,7 +32,7 @@ if (bRep == null)
 ```
 
 ## Use the Geometry
-The BRep geometry consists of various types of geometry, including faces. They can be accessed from any Macad.Occt.TopoDS_Shape using the extension methods of @Macad.Core.TopoDSShapeExtensions.
+The BRep geometry consists of various types of geometry, including faces. They can be accessed from any Macad.Occt.TopoDS_Shape using extension methods.
 
 The area of each face is a property which can be calculated using the static class Macad.Occt.BRepGProp and Macad.Occt.GProp_GProps. Please consult the documentation of the geometry library for usage of this classes.
 
@@ -59,6 +59,6 @@ Messages.Info(string.Format("The sum of all face areas is {0}", sumArea));
 [!code-cs[Main](Samples/SumFaceAreas.csx)]
 
 ## See Also
-- @dbef1051-1ced-4b54-89a5-64c02de1722d
+- <xref:dbef1051-1ced-4b54-89a5-64c02de1722d>
 - [OpenCASCADE Technology Documentation](https://dev.opencascade.org/doc/overview/html/index.html)
 - [OpenCASCADE Technology Reference Manual](https://dev.opencascade.org/doc/refman/html/index.html)

@@ -61,5 +61,5 @@ We now have a script which creates a box, finds the greatest area face and impri
 [!code-cs[Main](Samples/CreateImprint.csx)]
 
 ## See Also
-- @dbef1051-1ced-4b54-89a5-64c02de1722d
-- @cb7fcf59-b5d0-42c4-938e-e8cdbe3edd05
+- <xref:dbef1051-1ced-4b54-89a5-64c02de1722d>
+- <xref:cb7fcf59-b5d0-42c4-938e-e8cdbe3edd05>

@@ -16,23 +16,25 @@ For the installation of Wine on MacOS see [here](https://gitlab.winehq.org/wine/
 
 ## Linux
 
-Operation on Linux was tested using the commercial emulation software [Crossover](https://www.codeweavers.com/crossover) and the free version [Wine](https://www.winehq.org/).
+Operation on Linux was tested using the commercial emulation software [Crossover](https://www.codeweavers.com/crossover) and the free counterpart [Wine](https://www.winehq.org/).
 
-Wine is available in most distributions via the respective app manager, but the software version may already be older and therefore still contain errors, which usually show up in the UI rendering. The operation of Macad|3D was tested on Ubuntu 23. If UI/display errors occur, manual installation of the latest version is recommended. Wine itself provides instructions for this.
+Wine is available in most distributions via the respective app manager, but the software version may already be older and therefore still contain errors, which usually show up in the UI rendering. If UI/display errors occur, manual installation of the latest version is recommended.
 
-For the installation of Wine on Linux see [WineHQ Installation and Configuration](https://gitlab.winehq.org/wine/wine/-/wikis/Wine-Installation-and-Configuration).
+The operation of Macad|3D was tested on Ubuntu 23.10 and Wine 9.0.
 
-Please make sure you also have installed [Winetricks](https://gitlab.winehq.org/wine/wine/-/wikis/Winetricks) and the [Corefonts](https://linuxconfig.org/configuring-wine-with-winetricks).
+For the installation of Wine on Linux see [WineHQ Installation and Configuration](https://gitlab.winehq.org/wine/wine/-/wikis/Wine-Installation-and-Configuration). Please make sure you also have installed the [Corefonts](https://linuxconfig.org/configuring-wine-with-winetricks).
 
-### Install Macad|3D using Wine
-Download the latest version from the [Macad|3D Website](https://macad3d.net). Start a shell prompt and navigate to the directory containing the downloaded installer executable and run the executable using Wine:
+### Installing Macad|3D
+Download the latest version from the [Macad|3D Website](https://macad3d.net). Start a terminal, navigate to the directory containing the downloaded installer executable and run the executable using Wine:
 ```bash
 cd /path/to/downloaded/installer
 wine Macad3D_4.0_Setup.exe
 ```
-Replace `Macad3D_4.0_Setup.exe` with the actual name of the downloaded installer version.
+Replace `Macad3D_4.0_Setup.exe` with the actual name of the downloaded installer (version may vary).
 
-Follow the on-screen instructions for the installer.
+Follow the on-screen instructions for the installer to complete the installation.
+
+### Configure Wine
 
 To keep the display of the application window as close as possible to the original, it is recommended to disable the setting _Allow the window manager to decorate the windows_.
 This can be done in _Wine configuration_ tool globally or in a special setup for Macad|3D. 
@@ -43,7 +45,7 @@ executable using Wine:
 winecfg
 ```
 
-Create a new profile, selected the file `Macad.exe` inside the installation directory (default: `C:\Program Files\Macad3D`). On the _Graphics_ tab, ensure that the checkbox _Allow the window manager to decorate the windows_ is unset, and save/apply these settings.
+Create a new profile, selected the file `Macad.exe` inside the installation directory (default is `C:\Program Files\Macad3D`). On the _Graphics_ tab, ensure that the checkbox _Allow the window manager to decorate the windows_ is unset, and save/apply these settings.
 
 ^![Create Profile in _WineCfg_](WineConfigure.apng)
 
