@@ -84,7 +84,7 @@ This release brings a significant extension to snapping. The basic system has be
 
 * Consistent use of @Macad.Common.Color struct.
 
-* Some API moved from @Macad.Core.Viewport class to @Macad.Interaction.ViewportController and from @Macad.Core.Workspace to @Macad.Interaction.WorkspaceController. Adjustments may ne necessary here.
+* Some API moved from @Macad.Core.Viewport class to @Macad.Interaction.ViewportController and from @Macad.Core.Workspace to @Macad.Interaction.WorkspaceController. Adjustments may be necessary here.
 
 ## Miscellaneous
 

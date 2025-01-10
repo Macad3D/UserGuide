@@ -39,8 +39,7 @@ Follow the on-screen instructions for the installer to complete the installation
 To keep the display of the application window as close as possible to the original, it is recommended to disable the setting _Allow the window manager to decorate the windows_.
 This can be done in _Wine configuration_ tool globally or in a special setup for Macad|3D. 
 
-After the installation succeded, start the Wine configuration tool:
-executable using Wine:
+After the installation succeeded, start the Wine configuration tool:
 ```bash
 winecfg
 ```
