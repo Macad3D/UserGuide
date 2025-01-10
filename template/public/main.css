@@ -40,7 +40,7 @@ figure {
     margin-inline-start: 10px;
     border-radius: var(--bs-border-radius);
     border-color: var(--bs-tertiary-color);
-    margin: 4px 2px;
+    margin: 4px 2px 16px 2px;
     box-shadow: var(--card-box-shadow);
 }
 
