@@ -48,9 +48,9 @@ The API of Macad\|3D will be enhanced and may also change with newer versions. I
 The API of Macad\|3D is not really documented yet. To get a starting point for writing scripts, a couple of example scripts demonstrating some typical use cases are provided in this user guide. These examples have a basic documentation, and show how to interact with various parts of the application.
 
 > [!TIP]
->  * All shapes have static factory methods to create a primitive or modifier shape. Use them instead of creating shapes yourself. This is also true for @Macad.Core.Topology.Body.
+> * All shapes have static factory methods to create a primitive or modifier shape. Use them instead of creating shapes yourself. This is also true for @Macad.Core.Topology.Body.
 > * Do not call the undo commitment method yourself. All changes your script makes will be committed automatically after execution of the script.
-> * You can get the geometric data of every shape by the property @Macad.Core.Shapes.Shape.BRep. Working with geometric data demands knowledge of the _OpenCASCADE Technology SDK_. You can find the latest documentation following in the [links section](xref:dbef1051-1ced-4b54-89a5-64c02de1722d#see-also). Most of the SDK is wrapped in __Macad.Occt__ namespace, which is imported by default. Please note that most of the basic types (beginning with `gp_`) are wrapped as value types, omitting the prefix (e.g. `gp_Pnt` is wrapped as value type Macad.Occt.Pnt.
+> * You can get the geometric data of every shape via @Macad.Core.Shapes.Shape.GetBRep. Working with geometric data demands knowledge of the _OpenCASCADE Technology SDK_. You can find the latest documentation following in the [links section](xref:dbef1051-1ced-4b54-89a5-64c02de1722d#see-also). Most of the SDK is wrapped in __Macad.Occt__ namespace, which is imported by default. Please note that most of the basic types (beginning with `gp_`) are wrapped as value types, omitting the prefix (e.g. `gp_Pnt` is wrapped as value type Macad.Occt.Pnt.
 
 ## See Also
 - [OpenCASCADE Technology Documentation](https://dev.opencascade.org/doc/overview/html/index.html)
