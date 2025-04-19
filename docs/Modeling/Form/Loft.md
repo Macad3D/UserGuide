@@ -44,10 +44,10 @@ Only one contour can be used per section. If the sketch consists of more than on
 
 While lofts can be built using open or closed contours, they cannot be mixed. So the contours of all sections need to be closed or open.
 
-When creating a hollow shape — meaning at least one of the two end caps is set to_None_ — the system first generates the solid body. Then, an offset shape is created inside it, based on the specified wall thickness. For this to work correctly, all edges that connect the input sketches must maintain the same continuity (smoothness and type of transition) along their entire length.
+When creating a hollow shape — meaning at least one of the two end caps is set to _None_ — the system first generates the solid body. Then, an offset shape is created, based on the specified wall thickness. For this to work correctly, all edges that connect the input sketches must maintain the same continuity (smoothness and type of transition) between the connected faces along their entire length.
 
 > [!CAUTION]
-> If there is a change in continuity — for example, if a sharp corner in one sketch becomes a rounded curve in the next — the algorithm cannot handle it and will stop with an error message: _Mixed Connectivity_. 
+> If there is a change in continuity — for example, if a sharp corner in one sketch becomes a rounded curve in the next — the algorithm cannot handle it and will stop with the error message: _Mixed Connectivity_. 
 
 If you run into this issue, you can solve it by editing the sketch that contains the rounded segment. Split the segment at the point where it should align with a corner in the other sketch, and manually insert a corner there instead. 
 Alternatively, you can set the capping mode to _Flat_ and build another loft to hollow it out using boolean cut.
