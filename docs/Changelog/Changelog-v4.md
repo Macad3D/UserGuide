@@ -2,7 +2,7 @@
 uid: 0aa98281-d673-4261-af37-cee77ada8add
 title: What's new in Macad|3D Release 4
 ---
-This page lists all new features and changes of the version 4.0 compared to the previous version.
+This page lists all new features and changes of the version 4.1 compared to the previous version.
 
 ## Snapping 
 
@@ -88,6 +88,47 @@ This release brings a significant extension to snapping. The basic system has be
 
 ## Miscellaneous
 
-* Improved **Pipe Drawing** dimensions
+* Improved **[Pipe](xref:69425fd0-ff1a-4dc3-9014-12860684e057) Drawing** dimensions
 
-* Improved Compatibility with **Wine/Crossover**. See [article](xref:46793f6d-da23-48ea-913a-186727062a80) for more information.
+* Improved Compatibility with **Wine/Crossover**. See the [article](xref:46793f6d-da23-48ea-913a-186727062a80) for more information.
+
+## Update 4.1
+
+This is a maintenance release with many fixes and the following new features and changes:
+
+#### Modelling
+
+* **[Loft](xref:0e316c19-1062-42bb-82c1-22b91d9cca7e)** and **[Offset](xref:af5f6317-5201-4c55-b56d-da368f359324)** modifiers report a detailed description to the message log when the algorithm fails in some cases.
+
+* **[Loft](xref:0e316c19-1062-42bb-82c1-22b91d9cca7e)** no longer requires each sketch to have the same number of segments.
+* Corrected **[Pipe](xref:69425fd0-ff1a-4dc3-9014-12860684e057)** automatic calculation of bend radius for symmetric profiles.
+
+* The **[Pipe](xref:69425fd0-ff1a-4dc3-9014-12860684e057)** property panel now displays the actual auto-determined values of Y-dimension and bend radius.
+
+* **Boolean** operation creation now correctly supports undo correctly when creating the modifier with all operands preselected.
+
+#### Sketch Editor
+
+* Disable creation of **Horizontal** and **Vertical constraint** if the segment endpoints would coincide in the result.
+
+* If the **constraints** are not solved, write a message to the log and to the Constraints property panel.
+
+#### Workspace
+
+* In the **Document Explorer**, display different icons for bodies depending on their shape type.
+
+* When the visual grid is scaled, the **grid snapping** snaps to the scaled visual grid, not to the unscaled original.
+
+* The **Messages Panel** now adds a link to message entries with details and displays the details inline instead of as a tooltip.
+
+* When pressing the left mouse button while still moving with the right mouse button, the **rubberband selection** is no longer initiated when the right mouse button is released.
+
+* The **grid size** of 0.02mm was not displayed correctly in the bottom right corner of the viewport.
+
+* Fix missing **error marker** when no valid shape is not available at load or create time.
+
+#### Miscellaneous
+
+* Circular **dependencies** are now detected and will cause shape making to fail.
+
+* The version of **OCCT** has been updated to 7.9.0.
