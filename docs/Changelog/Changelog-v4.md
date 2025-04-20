@@ -105,7 +105,7 @@ This is a maintenance release with many fixes and the following new features and
 
 * The **[Pipe](xref:69425fd0-ff1a-4dc3-9014-12860684e057)** property panel now displays the actual auto-determined values of Y-dimension and bend radius.
 
-* **Boolean** operation creation now correctly supports undo correctly when creating the modifier with all operands preselected.
+* **Boolean** operation creation now correctly supports undo when creating the modifier with all operands preselected.
 
 #### Sketch Editor
 
