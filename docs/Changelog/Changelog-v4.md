@@ -125,7 +125,7 @@ This is a maintenance release with many fixes and the following new features and
 
 * The **grid size** of 0.02mm was not displayed correctly in the bottom right corner of the viewport.
 
-* Fix missing **error marker** when no valid shape is not available at load or create time.
+* Fix missing **error marker** when no valid shape is available at load or create time.
 
 #### Miscellaneous
 
