@@ -125,10 +125,31 @@ This is a maintenance release with many fixes and the following new features and
 
 * The **grid size** of 0.02mm was not displayed correctly in the bottom right corner of the viewport.
 
-* Fix missing **error marker** when no valid shape is available at load or create time.
+* Fixed missing **error marker** when no valid shape is available at load or create time.
 
 #### Miscellaneous
 
 * Circular **dependencies** are now detected and will cause shape making to fail.
 
 * The version of **OCCT** has been updated to 7.9.0.
+
+## Update 4.2
+
+This is a maintenance release with many fixes and the following new features and changes:
+
+#### Modelling
+
+* Fixed false positive **circular dependency** detection when the shape making fails by exception.
+
+* The **[Chamfer](xref:28fda54f-4380-45f4-b55e-23093b6dc6de)** and **[Fillet](xref:9b151212-b7f3-43ab-ad5a-bb03c8c8b083)** tools now correctly handle the error state of the shape. If the modifier fails to make the new faces, the original edges are highlighted in red and can then be deselected instead, unless the modifier can make the shape again without error.
+
+#### Workspace
+
+* If the shape of a body is not valid, the first **valid shape** in the shape stack is displayed instead of just the error marker.
+
+* Fixed the **error marker** not being removed on temporary ghost display.
+
+* Fixed the flickering of the **selection highlight** when the shape is updated in error state.
+
+* Reduced the flickering of the **error message bar** when the shape is updated in error state.
+
