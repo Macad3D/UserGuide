@@ -1,6 +1,7 @@
 ---
 uid: d678cf8c-0e7f-46cd-8bbc-de964ddfecc6
 title: Boolean Cut
+icon: BooleanCut.svg
 ---
 Cuts the solid shape of one ore more bodies from the shape of another body.
 

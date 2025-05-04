@@ -1,6 +1,11 @@
 {{!master(layout/_master.tmpl)}}
 <div class="conceptual">
     {{{rawTitle}}}
-    <h1>{{{title}}}</h1>
-    {{{conceptual}}}
+    <div class="clearfix">
+        {{#icon}}
+            <img class="svg img-thumbnail img-fluid float-end" src="{{icon}}" alt="">
+        {{/icon}}
+        <h1>{{{title}}}</h1>
+        {{{conceptual}}}
+    </div>
 </div>

@@ -1,6 +1,7 @@
 ---
 uid: af5f6317-5201-4c55-b56d-da368f359324
 title: Offset
+icon: Offset.svg
 ---
 Makes a sketch or solid thicker or thinner by creating parallel copies of each curve or face at a specified distance and closing the resulting gaps.
 

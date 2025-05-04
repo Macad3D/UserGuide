@@ -1,6 +1,7 @@
 ﻿---
 uid: eecb316b-a4da-441b-b9a6-3fadf9275889
 title: Sphere
+icon: Sphere.svg
 ---
 Create a full or a segment of a sphere shape. The sphere can be truncated on the bottom and the top.
 

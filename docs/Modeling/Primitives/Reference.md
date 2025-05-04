@@ -1,6 +1,7 @@
 ---
 uid: 55fc2982-4f52-4c9d-8e75-b1b100fd53b0
 title: Reference
+icon: Reference.svg
 ---
 Create a reference shape to start a new body on a shape of another body.
 

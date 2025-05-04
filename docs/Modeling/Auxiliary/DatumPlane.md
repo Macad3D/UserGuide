@@ -1,6 +1,7 @@
 ﻿---
 uid: 322f5cc2-0fc7-43f9-bb80-5e87cb3e3651
 title: Datum Plane
+icon: DatumPlane.svg
 ---
 Creates a reference plane according to the current working plane.
 

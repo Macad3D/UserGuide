@@ -1,6 +1,7 @@
 ﻿---
 uid: c867c6ad-f4ce-432b-a097-99596e31fea1
 title: Linear Array
+icon: LinearArray.svg
 ---
 Adds a number of copies of a sketch or solid, which are arranged in a linear pattern, to the shape.
 

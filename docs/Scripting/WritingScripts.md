@@ -1,6 +1,7 @@
 ﻿---
 uid: dbef1051-1ced-4b54-89a5-64c02de1722d
 title: Writing Scripts
+icon: ScriptIcon.svg
 ---
 Macad\|3D uses C# as the primary language for writing scripts. You can use any language targeting the .Net framework by pre-compiling an assembly and referencing this assembly inside your script.
 

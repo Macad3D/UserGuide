@@ -1,6 +1,7 @@
 ﻿---
 uid: D3faf9Bf-849f-4612-b689-bd5f699e850d
 title: Imprint
+icon: Imprint.svg
 ---
 Imprints a face based on a sketch to create a protrusion, depression or cutout.
 

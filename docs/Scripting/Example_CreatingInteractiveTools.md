@@ -1,6 +1,7 @@
 ﻿---
 uid: 8bd40f7f-0687-46fe-ba84-2faf6bc91571
 title: Script Example - Creating Interactive Tools
+icon: ScriptIcon.svg
 ---
 In the preceding example we have created a script which cuts a hole into a shape using a face found in code. Normally the face would be selected interactively by the user. This example shows how to create a tool to let the user select the face to imprint.
 

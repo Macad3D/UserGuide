@@ -1,6 +1,7 @@
 ﻿---
 uid: 9b151212-b7f3-43ab-ad5a-bb03c8c8b083
 title: Fillet
+icon: Fillet.svg
 ---
 Fillets edges of a solid.
 

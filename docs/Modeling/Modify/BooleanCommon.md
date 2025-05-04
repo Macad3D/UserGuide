@@ -1,6 +1,7 @@
 ---
 uid: 79be5f3d-4bf0-4c76-9bc6-50428e6ed621
 title: Boolean Common
+icon: BooleanCommon.svg
 ---
 Combines the solid shape of two or more bodies by calculating the common part of all shapes.
 

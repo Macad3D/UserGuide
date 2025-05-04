@@ -43,6 +43,7 @@
         "files": [
           "docs/**.png",
           "docs/**.apng",
+          "docs/**.svg",
           "images/*",
           "go/*.php",
           "go/.htaccess"

@@ -1,6 +1,7 @@
 ﻿---
 uid: 87d3ecca-434c-474d-befd-47f1bb83370e
 title: Unfold Sheet
+icon: UnfoldSheet.svg
 ---
 Unfolds a sheet with bend flanges with respect to the material compression.
 

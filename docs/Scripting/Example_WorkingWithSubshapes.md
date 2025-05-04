@@ -1,6 +1,7 @@
 ﻿---
 uid: 0e4bd8dd-c0f6-4ad6-a251-302a96744c94
 title: Script Example - Working with Subshapes
+icon: ScriptIcon.svg
 ---
 Many modifier require the selection of subshapes (vertex, edge or face). This example will show how to deal with it in code using subshape references.
 

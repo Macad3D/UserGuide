@@ -1,6 +1,7 @@
 ﻿---
 uid: f11b3aa7-3084-4b49-b11b-6ca48b65ee58
 title: Script Examples - Working with Geometry
+icon: ScriptIcon.svg
 ---
 Geometry is accessible through wrapped interfaces of the underlying geometry library. This example shows how to access the geometry of a shape and to work with the geometric library.
 

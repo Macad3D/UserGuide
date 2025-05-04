@@ -1,6 +1,7 @@
 ﻿---
 uid: 84820e79-6eee-4be0-88a7-9ee920b99815
 title: Script Example - Export and Import
+icon: ScriptIcon.svg
 ---
 Export and Import are key features of every application dealing with 3D content. We will show in this example how to automatically handle exporting and importing tasks.
 

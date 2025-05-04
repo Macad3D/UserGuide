@@ -1,6 +1,7 @@
 ---
 uid: 86065e4d-c0fc-46e2-aae4-4b385fb47409
 title: Cross Section
+icon: CrossSection.svg
 ---
 Creates a cross section sketch by cutting the solid with a plane.
 

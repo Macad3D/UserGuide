@@ -1,6 +1,7 @@
 ﻿---
 uid: cb7fcf59-b5d0-42c4-938e-e8cdbe3edd05
 title: Script Example - Creating Bodies and Shapes
+icon: ScriptIcon.svg
 ---
 This example will show the basic operations to create bodies and shapes, and add modifiers to it.
 

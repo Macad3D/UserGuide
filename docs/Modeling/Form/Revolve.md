@@ -1,6 +1,7 @@
 ﻿---
 uid: 74c0aab4-7847-4dcb-83e9-6ed639f4591c
 title: Revolve
+icon: Revolve.svg
 ---
 Creates a solid by revolving a sketch contour.
 

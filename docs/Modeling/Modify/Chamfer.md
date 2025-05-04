@@ -1,6 +1,7 @@
 ﻿---
 uid: 28fda54f-4380-45f4-b55e-23093b6dc6de
 title: Chamfer
+icon: Chamfer.svg
 ---
 Chamfers edges of a solid.
 

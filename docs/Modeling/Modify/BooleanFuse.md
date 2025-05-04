@@ -1,6 +1,7 @@
 ---
 uid: dff138bf-06a6-485c-a94d-890ef71a1372
 title: Boolean Fuse
+icon: BooleanFuse.svg
 ---
 Fuses the solid shapes of one ore more bodies.
 

@@ -1,6 +1,7 @@
 ﻿---
 uid: 5da4906e-c86b-4f91-8b30-f5163e152d1e
-title: Cylinder 
+title: Cylinder
+icon: Cylinder.svg
 ---
 Create a cylinder shape, or a segment of it.
 

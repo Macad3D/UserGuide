@@ -1,6 +1,7 @@
 ﻿---
 uid: ee35e475-eb9c-4871-9da8-e04e53faef6a
 title: Halved Joint
+icon: HalvedJoint.svg
 ---
 Build a junction of two solids by removing half of the thickness from each part.
 

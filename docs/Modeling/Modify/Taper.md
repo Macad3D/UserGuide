@@ -1,6 +1,7 @@
 ﻿---
 uid: ef7f7484-88f2-45d7-8062-771c8c0ad04e
 title: Taper
+icon: Taper.svg
 ---
 Tapers a face of a solid guided by a base edge or vertex.
 

@@ -139,6 +139,14 @@ footer {
   padding-bottom: 0px;
   border-bottom: 0px;
 }
+.conceptual .img-thumbnail {
+  height: auto;
+  width: 20%;
+  max-width: 96px;
+  background-color: var(--bs-border-color);
+  border-color: var(--bs-tertiary-color);
+  box-shadow: var(--card-box-shadow);
+}
 
 /* Managed Reference */
 .parameters dt>b {

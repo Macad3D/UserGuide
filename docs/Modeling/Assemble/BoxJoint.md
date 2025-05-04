@@ -1,6 +1,7 @@
 ﻿---
 uid: c0d4325e-1684-4449-b71d-5fa1c875dd5c
 title: Box Joint
+icon: BoxJoint.svg
 ---
 Build a junction of two solids by using interlocking profiles.
 

@@ -1,6 +1,7 @@
 ---
 uid: 5974b87b-8ce2-4454-b400-377b936650bb
 title: Scale
+icon: Scale.svg
 ---
 Scales a sketch, a solid or a mesh uniformly or non-uniformly.
 

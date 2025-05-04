@@ -1,6 +1,7 @@
 ﻿---
 uid: 0857be7d-eabe-40e1-bda3-a3415b29a4cd
 title: Running Scripts
+icon: ScriptIcon.svg
 ---
 Macad\|3D supports running scripts using C# as the primary language. Scripts can be used to extent the functionality of the modeling tools or to implement a very special workflow.
 

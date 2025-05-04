@@ -1,6 +1,7 @@
 ﻿---
 uid: 07407809-3236-4469-ad99-526aab13b6e7
 title: Circular Array
+icon: CircularArray.svg
 ---
 Adds a number of copies of a sketch or a solid, which are arranged on a circle, to the shape.
 

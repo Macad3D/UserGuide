@@ -1,6 +1,7 @@
 ﻿---
 uid: 0e316c19-1062-42bb-82c1-22b91d9cca7e
 title: Loft
+icon: Loft.svg
 ---
 Create a solid or hollowed shape defined by a series of 2D sections provided by sketches.
 

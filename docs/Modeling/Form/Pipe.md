@@ -1,6 +1,7 @@
 ---
 uid: 69425fd0-ff1a-4dc3-9014-12860684e057
 title: Pipe
+icon: Pipe.svg
 ---
 Creates a pipe by sweeping a profile along a modelled path. Pipes can be applied to sketches only, where the path is taken from.
 

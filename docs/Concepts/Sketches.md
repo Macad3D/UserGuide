@@ -1,6 +1,7 @@
 ---
 uid: 0dc12d15-5450-460c-909b-f25ed1cf4b7e
 title: Sketches
+icon: SketchIcon.svg
 ---
 This page explains the Sketch and it's tools.
 

@@ -1,6 +1,7 @@
 ﻿---
 uid: 5f9b1a87-60f9-448a-860a-567eb18473c8
 title: Flange Sheet
+icon: FlangeSheet.svg
 ---
 Extends a solid shape by adding a bended flange.
 

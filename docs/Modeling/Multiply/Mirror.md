@@ -1,6 +1,7 @@
 ﻿---
 uid: 6578fa5e-7536-4df2-96fc-18a31a4cee9c
 title: Mirror
+icon: Mirror.svg
 ---
 Adds a mirrored copy of a sketch or a solid to the shape.
 

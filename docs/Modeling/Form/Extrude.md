@@ -1,6 +1,7 @@
 ﻿---
 uid: 240a3c08-f9a0-4e31-88e0-7b034c1d9f9d
 title: Extrude
+icon: Extrude.svg
 ---
 Extrudes a sketch or a single face of a solid.
 

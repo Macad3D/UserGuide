@@ -1,6 +1,7 @@
 ﻿---
 uid: 5da4906e-c86b-4f91-8b30-f5163e152d0e
 title: Box
+icon: Box.svg
 ---
 Create a box shape using dimensions of all three axes.
 
