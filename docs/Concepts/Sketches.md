@@ -23,7 +23,9 @@ Sketches are edited in their own editor. As soon as this is started, the viewpor
 
 ^![Sketch Editor 2D view with model cut](SketchEditorView.png)
 
-To create new segments, tools are started within the sketch editor. The segments are created by setting it's points. Existing points can be divided, this is represented by a circle around the point in question. The same thing happens when moving points. Since segments always have to form a closed curve for clean further processing, this feature is extremely important.
+To create new segments, start the tools in the sketch editor. The segments are created by setting the points. If an existing point is selected, it is shared between the existing and the new segment. This is indicated by a circle around the point in question when the point is selected. If this is not desired, the zoom size can be changed to increase the distance to the existing point in question. As segments must always form a closed curve for proper further processing, this function is extremely important, as only shared points form a seamless transition between two segments.
+
+When moving points, moved points can also be merged with other points. This is also shown by a circle around the point in question, but here a dialogue asks whether a merge should take place or not. 
 
 ## Constraints
 

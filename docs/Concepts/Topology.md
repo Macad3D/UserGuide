@@ -33,7 +33,7 @@ If the shape predecessor changes - because of skipped or inserted modifiers, or 
 
 In many cases, however, the sub-shape reference is executed in such a way that the desired sub-shape can be recognized even if it has been changed.
 
-^![Example of finding the shape again even after splitting](TopologySubshapeReferenceNotch.png)
+^![Example of finding the edge to fillet again even after splitting](TopologySubshapeReferenceNotch.png)
 
 The above also applies to shapes of type _sketch_, but limited to _vertices_ and _edges_. Shapes of type _mesh_ do not contain any sub-shape.
 
