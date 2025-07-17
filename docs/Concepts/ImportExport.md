@@ -24,6 +24,9 @@ PDF         | Drawing Export, Mesh Export (as 3D-PDF)
 > [!TIP] 
 > Imported meshes can be displayed, but not modified or be part of another modeling operation. However, meshes can be converted to solids using the [Convert to Solid](xref:e0d6ed71-f1fa-481b-94b4-c7f76591b1b4#shape-stack-converter) tool.
 
+> [!CAUTION] 
+> Macad\|3D works best with [B-rep](xref:0c834add-faf4-48f0-a8c3-e6dce411774c#see-also) shapes. Imported solids can have a wide variety of topologies and surface descriptions. One example of this are models from CAD programs that are based on B-spline ([NURBS](xref:0c834add-faf4-48f0-a8c3-e6dce411774c#see-also)) modeling, or exporters which convert the model to B-splines during export. These models cannot be processed by all modifiers because fundamental information has been lost, such as whether the surface is planar.
+
 ## Drawings
 
 Drawings are easily generated from a viewport and exported as 2D vector file. They contain every shape currently visible, with hidden lines removed (or rather exported with different style).
@@ -77,3 +80,6 @@ All settings will be saved with the body and be restored the next time you call 
 
 For an example how this exporter can be used, take a look into the Tutorial @cb109114-b7bd-40be-bb3a-ce7e0fbe0974.
 
+## See Also
+- [B-rep overview on Wikipedia](https://en.wikipedia.org/wiki/Boundary_representation)
+- [NURBS overview on Wikipedia](https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline)
