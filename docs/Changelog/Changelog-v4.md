@@ -153,3 +153,36 @@ This is a maintenance release with many fixes and the following new features and
 
 * Reduced the flickering of the **error message bar** when the shape is updated in error state.
 
+## Update 4.3
+
+This is a maintenance release with many fixes and the following new features and changes:
+
+#### Modelling
+
+* The **[UnfoldSheet](xref:87d3ecca-434c-474d-befd-47f1bb83370e)** modifier has been significantly improved to provide stable support for shapes with additional modifications. It has also been enhanced to analyse imported shapes with a variety of topological variations.
+
+* Furthermore, the modifier has been given a button to manually determine the start area. This enables support for multiple solids in one shape.
+
+* The algorithm for **analyzing bend sections** has been outsourced to the class @Macad.Core.Geom.BendAnalyzer and is available for script usage.
+
+* The **[FlangeSheet](xref:5f9b1a87-60f9-448a-860a-567eb18473c8)** modifier now updates the metadata describing face continuity after the bend and flange sections have been added.
+
+#### Sketch Editor
+
+* When **selecting elements**, if an element is clicked while <kbd>Ctrl</kbd> is pressed, the selection of that element is toggled.
+
+#### Workspace 
+
+* Double-clicking on an entry in the **document explorer** now aligns the view with that entity and adjusts the zoom level if appropriate.
+
+* Fixed that if a modifier marked as skipped in the **shape stack** is deleted, the next modifier added to the same stack was also skipped.
+
+* When bodies are **imported** into an empty document, the view is aligned with the new bodies.
+
+#### Exchange
+
+* The **BRep Exporter** gets a new export option that specifies whether the triangulation is included in the export.
+
+#### Miscellaneous
+
+* The version of **OCCT** has been updated to 7.9.1.
