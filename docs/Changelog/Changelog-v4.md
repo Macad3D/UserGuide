@@ -161,7 +161,7 @@ This is a maintenance release with many fixes and the following new features and
 
 * The **[UnfoldSheet](xref:87d3ecca-434c-474d-befd-47f1bb83370e)** modifier has been significantly improved to provide stable support for shapes with additional modifications. It has also been enhanced to analyse imported shapes with a variety of topological variations.
 
-* Furthermore, the modifier has been given a button to manually determine the start area. This enables support for multiple solids in one shape.
+* Furthermore, the property panel of that modifier has been given a button to manually determine the start face. This also enables support for multiple solids in one shape.
 
 * The algorithm for **analyzing bend sections** has been outsourced to the class @Macad.Core.Geom.BendAnalyzer and is available for script usage.
 
