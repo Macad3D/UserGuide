@@ -2,7 +2,7 @@
 uid: 0aa98281-d673-4261-af37-cee77ada8add
 title: What's new in Macad|3D Release 4
 ---
-This page lists all new features and changes of the version 4.1 compared to the previous version.
+This page lists all new features and changes of the version 4.3 compared to the previous version.
 
 ## Snapping 
 
