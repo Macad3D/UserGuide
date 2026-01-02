@@ -2,7 +2,7 @@
 uid: 0aa98281-d673-4261-af37-cee77ada8add
 title: What's new in Macad|3D Release 4
 ---
-This page lists all new features and changes of the version 4.3 compared to the previous version.
+This page lists all new features and changes of the version 4.4 compared to the previous version.
 
 ## Snapping 
 
@@ -186,3 +186,27 @@ This is a maintenance release with many fixes and the following new features and
 #### Miscellaneous
 
 * The version of **OCCT** has been updated to 7.9.1.
+
+## Update 4.4
+
+This is a maintenance release with many fixes and the following new features and changes:
+
+#### Modelling
+
+* The **[DatumPlane](xref:322f5cc2-0fc7-43f9-bb80-5e87cb3e3651)** modifier now correctly handles undo operations when selecting image files.
+
+#### Workspace 
+
+* The **drawing render mode** now shows the hidden lines in the correct color as seleted by the layer.
+
+#### Exchange
+
+* Importing **SVG to Sketch** now supports rectangles with round corners and the primitive types line, polyline and polygon. Also the import of paths with multiple arc segments was fixed.
+
+* The column width of STEP and IGES settings panel has been adjusted.
+
+* The import of STEP files now correctly detects failed imports.
+
+#### Miscellaneous
+
+* The version of **OCCT** has been updated to 7.9.2.
