@@ -16,7 +16,9 @@ For the installation of Wine on MacOS see [here](https://gitlab.winehq.org/wine/
 
 ## Linux
 
-Operation on Linux was tested using the commercial emulation software [Crossover](https://www.codeweavers.com/crossover) and the free counterpart [Wine](https://www.winehq.org/).
+Operation on Linux has been tested successfully using [Wine](https://www.winehq.org/). Wine is easy to install and comes with its own configuration gui. 
+
+There are also tools to help manage Wine versions, dependencies, and application-specific settings more conveniently. Popular Wine management programs include [Bottles](https://usebottles.com/), the game-focused [Lutris](https://lutris.net/) and [PlayOnLinux](playonlinux.com), and the commercial [Crossover](https://www.codeweavers.com/crossover), all building on Wine's core compatibility layer. 
 
 Wine is available in most distributions via the respective app manager, but the software version may already be older and therefore still contain errors, which usually show up in the UI rendering. If UI/display errors occur, manual installation of the latest version is recommended.
 
@@ -28,9 +30,9 @@ For the installation of Wine on Linux see [WineHQ Installation and Configuration
 Download the latest version from the [Macad|3D Website](https://macad3d.net). Start a terminal, navigate to the directory containing the downloaded installer executable and run the executable using Wine:
 ```bash
 cd /path/to/downloaded/installer
-wine Macad3D_4.0_Setup.exe
+wine Macad3D_4.4_Setup.exe
 ```
-Replace `Macad3D_4.0_Setup.exe` with the actual name of the downloaded installer (version may vary).
+Replace `Macad3D_4.4_Setup.exe` with the actual name of the downloaded installer (version may vary).
 
 Follow the on-screen instructions for the installer to complete the installation.
 
@@ -48,6 +50,4 @@ Create a new profile, selected the file `Macad.exe` inside the installation dire
 
 ^![Create Profile in _WineCfg_](WineConfigure.apng)
 
-
-
-
+For those who use integrated graphics together with a dedicated GPU (often in laptops), it may be important to set the dedicated GPU to be used instead of the one integrated in the CPU. This leads to higher energy consumption in laptops, but also significantly increases compatibility. This setting can either be made in the Linux system itself or directly in some tools such as Bottles, and is referred to as “Discrete Graphics” or “Discrete GPU.”
