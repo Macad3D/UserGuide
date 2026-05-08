@@ -36,7 +36,7 @@ We have the face we need, it is given as the first item in the result tuple. The
 Geometric data is volatile, it is recreated every time any parameter is changed on any item in the shape stack. To get a permanent reference to it, we need to get a @Macad.Core.Shapes.SubshapeReference to it. The reference must be requested from the shape we got the geometric data from.
 
 ```cs
-var subshapeReference = box.GetSubshapeReference(findFaceResult.Item1);
+var subshapeReference = box.GetSubshapeReference(findFaceResult.face);
 ```
 
 ## Adding the Modifier
