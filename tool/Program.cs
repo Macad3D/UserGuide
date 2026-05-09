@@ -10,7 +10,7 @@ namespace Macad.UserGuide;
 internal class Program
 {
     static List<string> _TempFiles = [];
-    static string? _PathToDocfxProject;
+    static string _PathToDocfxProject = "";
 
     //--------------------------------------------------------------------------------------------------
 
@@ -30,7 +30,7 @@ internal class Program
             path = Path.GetDirectoryName(path);
         }
 
-        if (_PathToDocfxProject == null)
+        if (string.IsNullOrEmpty(_PathToDocfxProject))
         {
             Console.WriteLine("Error: Cannot find Docfx project file.");
             Environment.Exit(-1);
