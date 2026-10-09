@@ -17,7 +17,7 @@ Radius
     > [!WARNING]
 >  The bend radius should be selected carefully with respect to the material. Selecting a radius which cannot be achieved with the used material can lead to deviations of the desired dimensions of your part.
 
-    ![_Radius = 5, Radius = 10_](FlangeSheetRadius.png)
+    ^![_Radius = 5, Radius = 10_](FlangeSheetRadius.png)
 
 Gaps
 :   This parameters will add a free space on the sides, making the flange smaller than the original face.
@@ -29,7 +29,7 @@ Relief Type
     * __Inside:__ The bend part will be thinned on the inside of the bend to the half of the thickness of the flange.
     * __Outside:__ The bend part will be thinned on the outside of the bend to the half of the thickness of the flange.
 
-    ![Relief Type _None_, _Inside_ and _Outside_](FlangeSheetReliefType.png)
+    ^![Relief Type _None_, _Inside_ and _Outside_](FlangeSheetReliefType.png)
 
 Reselect Face
 :   Starts reselection of the face the flange is being added to.
