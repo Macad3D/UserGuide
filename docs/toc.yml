@@ -10,6 +10,8 @@
   href: Modeling/toc.yml
 - name: Scripting
   href: Scripting/toc.yml
+- name: AI Agents (MCP)
+  href: Misc/McpServer.md
 - name: Platforms
   href: Misc/Platforms.md
 - href: License/License.md
