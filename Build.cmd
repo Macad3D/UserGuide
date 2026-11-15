@@ -1,5 +1,11 @@
 @echo off
 
+rem Usage: Build.cmd [metadata] [build] [preliminary]
+rem   metadata     Only run the API metadata stage
+rem   build        Only run the build stage
+rem   preliminary  Add a warning banner to every page (for builds from the develop branch)
+rem Without metadata/build switches, both stages are run.
+
 rem Find MSBuild
 setlocal enabledelayedexpansion
 set VSWHERE="%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe"

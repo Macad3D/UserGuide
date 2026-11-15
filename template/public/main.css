@@ -167,3 +167,8 @@ code {
     padding-left: .5em;
     padding-right: .5em;
 }
+
+/* Preliminary banner (develop builds) */
+.alert.preliminary-banner {
+    padding: 0.7rem 1rem;
+}
