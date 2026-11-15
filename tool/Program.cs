@@ -179,10 +179,10 @@ internal class Program
                 guid = line.Substring(7).ToLower();
                 if (!Guid.TryParse(guid, out Guid _))
                 {
-                    break;
+                    guid = "";
                 }
             }
-            else if (line.StartsWith("  href: "))
+            else if (line.StartsWith("  href: ") && !string.IsNullOrEmpty(guid))
             {
                 string href = line.Substring(8);
                 target.WriteLine($"'{guid}'=>'{href}',");
